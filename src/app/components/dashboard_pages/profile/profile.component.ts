@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { DashboardNavComponent } from "../dashboard-nav/dashboard-nav.component";
 
 @Component({
-  selector: 'app-booksession',
+  selector: 'app-profile',
   standalone: true,
   imports: [DashboardNavComponent],
-  templateUrl: './booksession.component.html',
-  styleUrl: './booksession.component.css'
+  templateUrl: './profile.component.html',
+  styleUrl: './profile.component.css'
 })
-export class BooksessionComponent {
+export class ProfileComponent {
 
 }

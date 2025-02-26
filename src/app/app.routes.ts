@@ -4,6 +4,8 @@ import { HomeComponent } from './components/home/home.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProgresstrackingComponent } from './components/dashboard_pages/progresstracking/progresstracking.component';
+import { BooksessionComponent } from './components/dashboard_pages/booksession/booksession.component';
+import { ProfileComponent } from './components/dashboard_pages/profile/profile.component';
 
 export const routes: Routes = [
     {
@@ -22,6 +24,14 @@ export const routes: Routes = [
     {
         path: 'progessTracking',
         component:ProgresstrackingComponent
+    },
+    {
+        path: 'booking',
+        component:BooksessionComponent
+    },
+    {
+        path: 'profile',
+        component:ProfileComponent
     },
     {
         path:'',

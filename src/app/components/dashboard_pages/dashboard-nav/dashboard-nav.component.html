@@ -12,8 +12,8 @@
         <mat-icon (click)="onHandleProgess()" [ngClass]="{'active-icon': isActive('progessTracking')}">
             hourglass_empty
         </mat-icon>
-        <mat-icon>book</mat-icon> <!-- for bookings -->
-        <mat-icon>account_circle</mat-icon> <!-- for profile -->
+        <mat-icon (click)="onHandleBooking()" [ngClass]="{'active-icon': isActive('booking')}" >book</mat-icon> <!-- for bookings -->
+        <mat-icon (click)="onHandleProfile()" [ngClass]="{'active-icon': isActive('profile')}">account_circle</mat-icon> <!-- for profile -->
         <mat-icon (click)="handleLogout()" [ngClass]="{'active-icon': isActive('landingpage')}">
             logout
         </mat-icon> <!-- for logout -->

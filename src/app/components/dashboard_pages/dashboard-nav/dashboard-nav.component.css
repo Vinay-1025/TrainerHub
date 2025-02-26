@@ -56,7 +56,7 @@ mat-icon {
 .active-icon {
     transition: all 0.4s ease-in-out;
     color: #43597d;
-    transform: scale(1.4);
+    transform: scale(1.2);
 }
 
 @media (max-width:600px) {

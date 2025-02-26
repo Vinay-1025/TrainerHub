@@ -26,6 +26,14 @@ export class DashboardNavComponent {
     this.router.navigateByUrl('progessTracking');
   }
 
+  onHandleBooking() {
+    this.router.navigateByUrl('booking');
+  }
+
+  onHandleProfile() {
+    this.router.navigateByUrl('profile');
+  }
+
   isActive(route: string): boolean {
     return this.router.url === `/${route}`;
   }
