@@ -1,0 +1,21 @@
+<div class="dashboard-cont">
+    <div class="dashboard-logo">
+        <p> 
+            <img src="../../../../assets/fav.png" class="logo" />
+            Trainer Hub
+        </p>
+    </div>
+    <div class="links">
+        <mat-icon (click)="onHandleDashboard()" [ngClass]="{'active-icon': isActive('dashboard')}">
+            dashboard
+        </mat-icon>
+        <mat-icon (click)="onHandleProgess()" [ngClass]="{'active-icon': isActive('progessTracking')}">
+            hourglass_empty
+        </mat-icon>
+        <mat-icon>book</mat-icon> <!-- for bookings -->
+        <mat-icon>account_circle</mat-icon> <!-- for profile -->
+        <mat-icon (click)="handleLogout()" [ngClass]="{'active-icon': isActive('landingpage')}">
+            logout
+        </mat-icon> <!-- for logout -->
+    </div>
+</div>

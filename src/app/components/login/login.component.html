@@ -1,0 +1,41 @@
+<div class="login-cont">
+    <div class="login-left-cont">
+        <div class="login-outer-cont">
+            
+            @if(isLoginView) {
+                <h1>Login</h1>
+                <form  class="login-form">
+                    <label>UserEmail</label>
+                    <input type="email" name="username" placeholder="Enter Email" [(ngModel)]="userLogin.useremail" />
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Enter Password" [(ngModel)]="userLogin.password" />
+                    <button class="login-submit" (click)="onLogin()" >
+                        Login In
+                    </button>
+                </form>
+
+            <hr />
+            <p class="option">Don't have an account ? <span class="highlet" (click)="onUserAuth()">Register</span></p>
+            }
+            @else {
+                <h1>Register</h1>
+                <form class="login-form">
+                    <label>UserEmail</label>
+                    <input type="email" name="useremail" placeholder="Enter Email" [(ngModel)]="useRegisterObj.useremail" />
+                    <label>Password</label>
+                    <input type="password" name="password" placeholder="Enter Password" [(ngModel)]="useRegisterObj.password" />
+                    <button class="login-submit" (click)="onRegister()" >
+                        Register
+                    </button>
+                </form>
+
+            <hr />
+            <p class="option" >Already have an account ? <span class="highlet" (click)="onUserAuth()">Login</span></p>
+            }
+
+        </div>
+    </div>
+    <div class="login-right-cont">
+        <img src="../../../assets/image.png" class="login-right-img"/>
+    </div>
+</div>

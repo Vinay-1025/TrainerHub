@@ -1,0 +1,15 @@
+.btn-cont {
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 10px 30px;
+    color: #fff;
+    background: #7b8ca6;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    &:hover {
+        background: #43597d;
+    }
+}

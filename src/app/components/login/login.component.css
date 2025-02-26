@@ -1,0 +1,143 @@
+.login-cont {
+    display: flex;
+    padding: 50px;
+    height: 82%;
+}
+
+.login-left-cont {
+    flex-basis: 40%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.login-outer-cont {
+    padding: 0 40px;
+    height: 100%;
+    border: 1px solid #7b8ca6;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px #43597d;
+}
+
+h1 {
+    color: #43597d;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 32px;
+    font-weight: 600;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    margin-top: 20px;
+    color: #7b8ca6;
+    font-weight: 550;
+}
+
+input {
+    font-size: 18px;
+    padding: 8px;
+    outline: none;
+    color: #fff;
+    font-weight: 550;
+    background: rgba(0, 0, 0, 0.674);
+    border: 1px solid rgba(0, 0, 0, 0.392);
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.638);
+    &:hover {
+        box-shadow: 0 4px 12px #43597d;
+        border: 1px solid #43597d;
+    }
+    &::placeholder{
+        color: #fff;
+    }
+}
+
+.login-submit {
+    margin: 20px 0;
+    padding: 10px 0;
+    color: #fff;
+    background: #7b8ca6;
+    border: none;
+    border-radius: 5px;
+    font-weight: 550;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    &:hover {
+        background: #43597d;
+    }
+}
+
+.option {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.highlet {
+    font-weight: 550;
+    text-transform: uppercase;
+    color: #7b8ca6;
+    cursor: pointer;
+    &:hover {
+        color: #43597d;
+    }
+}
+
+.login-right-cont {
+    flex-basis: 55%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.login-right-img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 850px) {
+    .login-cont{
+        flex-direction: column;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        background: url(../../../assets/image.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .login-right-cont{
+        display: none;
+    }
+
+    .option{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 580px) {
+    h1{
+        font-size: 20px;
+    }
+
+    input{
+        font-size: 12px;
+    }
+
+    .option {
+        font-size: 12px;
+    }
+
+    .login-submit {
+        font-size: 12px;
+    }
+}

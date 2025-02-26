@@ -1,0 +1,56 @@
+.card-cont {
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.289);
+    border-radius: 5px;
+}
+
+.centric {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.btn-centric {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h2{
+    color: #43597d;
+}
+
+span{
+    color: #7b8ca6;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.btn {
+    padding: 10px 30px;
+    width: 100%;
+    margin-top: 30px;
+    color: #fff;
+    background: #7b8ca6;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    &:hover {
+        background: #43597d;
+    }
+}
+
+@media (max-width:750px) {
+
+    h1{
+        font-size: 23px;
+    }
+    h2{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+}

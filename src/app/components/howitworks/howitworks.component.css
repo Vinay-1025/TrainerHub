@@ -1,0 +1,49 @@
+
+.how {
+    margin-top: 150px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.how-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 40%;
+}
+
+.how-right {
+    flex-basis: 53%;
+}
+
+.left-img {
+    width: 70%;
+    height: auto;
+    text-align: center;
+}
+
+h1{
+    color: #43597d;
+}
+
+p {
+    text-align: justify;
+}
+
+@media (max-width: 750px) {
+    .how {
+        flex-direction: column;
+    }
+        h1{
+            font-size: 23px;
+        }
+        h2{
+            font-size: 18px;
+        }
+    
+        p{
+            font-size: 15px;
+        }
+
+}

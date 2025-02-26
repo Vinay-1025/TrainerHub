@@ -1,0 +1,27 @@
+.image-cont {
+    height: 80%;
+    padding: 40px 5px;
+    width: 200px;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.264);
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        transform: translateY(-4%);
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+.image {
+    width: 150px;
+    height: 140px;
+}
+
+p {
+    color: #43597d;
+    font-weight: 550;
+    margin-top: 20px;
+}

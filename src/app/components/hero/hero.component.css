@@ -1,0 +1,43 @@
+.hero-cont {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.hero-left {
+    flex-basis: 50%;
+    text-align: justify;
+}
+
+.btns {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-right {
+    flex-basis: 45%;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+@media (max-width: 750px) {
+    .hero-cont {
+        flex-direction: column-reverse;
+    }
+
+    h1{
+        font-size: 23px;
+    }
+    h2{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+}
+

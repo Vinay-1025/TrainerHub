@@ -1,0 +1,25 @@
+<div class="pricing-cont">
+    <div class="header">
+        <h2>{{pricingTitle}}</h2>
+        <p>{{pricingDesc}}</p>
+        <div class="container">
+            <b>Monthly</b>
+            <input type="checkbox" id="check" checked />
+            <label for="check" class="button" (click)="onPricingPlanClick()"></label>
+            <b> Yearly </b>
+        </div>
+    </div>
+    <div class="pricing-card">
+
+        @if(pricingplan){
+            <app-pricingcard card-title="Start" card-desc="Description" card-price="19" type="Month"></app-pricingcard>
+        <app-pricingcard card-title="Advanced" card-desc="Description" card-price="39" type="Month"></app-pricingcard>
+        <app-pricingcard card-title="Premium" card-desc="Description" card-price="59" type="Month"></app-pricingcard>
+        }
+        @else {
+            <app-pricingcard card-title="Start" card-desc="Description" card-price="200" type="Year"></app-pricingcard>
+        <app-pricingcard card-title="Advanced" card-desc="Description" card-price="400" type="Year"></app-pricingcard>
+        <app-pricingcard card-title="Premium" card-desc="Description" card-price="650" type="Year"></app-pricingcard>
+        }
+    </div>
+</div>

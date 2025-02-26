@@ -1,0 +1,50 @@
+.why-cont {
+    margin-top: 50px;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.why-left {
+    flex-basis: 45%;
+}
+
+.why-right {
+    flex-basis: 40%;
+}
+
+.title {
+    color: #43597d;
+}
+
+span {
+    color: #7b8ca6;
+}
+
+p{
+    text-align: justify;
+}
+
+.image {
+    width: 100%;
+}
+
+@media (max-width:950px) {
+    .why-cont {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width:750px) {
+
+    h1{
+        font-size: 23px;
+    }
+    h2{
+        font-size: 18px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+}
