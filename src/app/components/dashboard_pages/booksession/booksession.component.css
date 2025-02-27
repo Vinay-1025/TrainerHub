@@ -1,0 +1,35 @@
+.book-btn {
+    background: #f2f2f2;
+    border: 2px solid #212EA0;
+    color: #212EA0;
+    border-radius: 4px;
+    box-shadow: 0px 4px 10px black;
+    text-align: center;
+    padding: 4px 10px;
+    padding-bottom: 0px;
+    &:hover {
+        background-color: #212EA0;
+        color: #f2f2f2;
+        border-color: #f2f2f2;
+    }
+}
+
+.book-close-btn {
+    background: #f2f2f2;
+    border: 2px solid #cc0303;
+    color: #cc0303;
+    border-radius: 4px;
+    box-shadow: 0px 4px 10px black;
+    text-align: center;
+    padding: 4px 10px;
+    padding-bottom: 0px;
+    &:hover {
+        background-color: #cc0303;
+        color: #f2f2f2;
+        border-color: #f2f2f2;
+    }
+}
+
+.filter {
+    float: right;
+}

@@ -1,3 +1,14 @@
-.dashboard-cont {
-    padding: 0 30px;
+.stat-cont {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat-left {
+    flex-basis: 70%;
+}
+
+.stat-right {
+    flex-basis: 28%;
+    height: 100%;
+    flex-direction: column;
 }

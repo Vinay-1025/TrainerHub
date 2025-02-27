@@ -15,7 +15,7 @@ export class DashboardNavComponent {
   router = inject(Router);
 
   handleLogout() {
-    this.router.navigateByUrl('landingpage');
+    this.router.navigateByUrl('/');
   }
 
   onHandleDashboard() {

@@ -10,11 +10,11 @@ import { ProfileComponent } from './components/dashboard_pages/profile/profile.c
 export const routes: Routes = [
     {
         path: '',
-        redirectTo: 'landingpage',
+        redirectTo: '',
         pathMatch: 'full'
     },
     {
-        path:'landingpage',
+        path:'',
         component:HomeComponent
     },
     {

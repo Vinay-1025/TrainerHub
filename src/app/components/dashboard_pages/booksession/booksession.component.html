@@ -1,3 +1,41 @@
 <div class="dashboard-cont">
     <app-dashboard-nav></app-dashboard-nav>
+    
+    <div class="d-flex justify-content-between align-items-center my-3">
+        <h2>Bookings</h2>
+        <div class="d-flex align-items-center">
+            <input type="text" [(ngModel)]="filterText" class="form-control me-2" placeholder="Search by Trainer Name">
+        </div>
+    </div>
+
+    <table class="table table-bordered text-center">
+        <thead class="table-dark">
+            <tr>
+                <th class="p-2"> S.No </th>
+                <th class="p-2"> Date </th>
+                <th class="p-2"> Type </th>
+                <th class="p-2"> Trainer Name </th>
+                <th class="p-2"> Mode </th>
+                <th class="p-2"> Join Link <mat-icon class="filter">filter_list</mat-icon> </th>
+                <th class="p-2" colspan="2"> Update </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let booking of filteredBookings; let i = index">
+                <td class="p-2"> {{ i+1 }} </td>
+                <td class="p-2"> {{ booking.date }} </td>
+                <td class="p-2">{{ booking.type }}</td>
+                <td class="p-2"> {{ booking.trainername }} </td>
+                <td class="p-2">{{ booking.mode }}</td>
+                <td class="p-2"> 
+                    <a *ngIf="booking.mode === 'Online'; else offlineText" [href]="booking.joinlink" target="_blank">
+                        <button class="btn btn-outline-success">Join</button>
+                    </a>
+                    <ng-template #offlineText>NA</ng-template>
+                </td>
+                <td class="p-2"><button class="book-btn"> <mat-icon>schedule</mat-icon></button></td>
+                <td class="p-2"><button class="book-close-btn"> <mat-icon>remove</mat-icon></button></td>
+            </tr>
+        </tbody>
+    </table>
 </div>
